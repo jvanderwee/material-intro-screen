@@ -433,7 +433,6 @@ public abstract class MaterialIntroActivity extends AppCompatActivity {
             if (position < adapter.getCount() - 1) {
                 setViewsColor(position, offset);
             } else if (adapter.getCount() == 1) {
-                viewPager.setBackgroundColor(adapter.getItem(position).backgroundColor());
                 messageButton.setTextColor(adapter.getItem(position).backgroundColor());
 
                 tintButtons(ColorStateList.valueOf(adapter.getItem(position).buttonsColor()));
@@ -442,7 +441,6 @@ public abstract class MaterialIntroActivity extends AppCompatActivity {
 
         private void setViewsColor(int position, float offset) {
             int backgroundColor = getBackgroundColor(position, offset);
-            viewPager.setBackgroundColor(backgroundColor);
             messageButton.setTextColor(backgroundColor);
 
             int buttonsColor = getButtonsColor(position, offset);

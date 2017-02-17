@@ -447,7 +447,6 @@ public abstract class MaterialIntroActivity extends AppCompatActivity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 getWindow().setStatusBarColor(buttonsColor);
             }
-            pageIndicator.setPageIndicatorColor(buttonsColor);
 
             tintButtons(ColorStateList.valueOf(buttonsColor));
         }
